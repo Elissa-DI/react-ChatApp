@@ -73,6 +73,8 @@ body {
   border: none;
   outline: none;
   border-radius: 8px;
+  font-size: 18px;
+  font-size: bold;
   font-family: "Avenir";
   cursor: pointer;
   transition: all .44s ease;
@@ -88,3 +90,32 @@ body {
   color: white; 
   background: rgb(43, 47, 60);
 }
+.light-mode {
+  background-color: rgb(16, 199, 132);
+  color: black;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.background p {
+  margin-top: -120px;
+    position: absolute;
+    display: flex;
+    font-weight: bold;
+    font-family: mv boli;
+    font-size: 30px;
+    text-shadow: 0px 0px 1px white;
+    animation: move-title 5s ease-in-out forwards infinite;
+  }
+  @keyframes move-title {
+    from {
+        right: 90%;
+        color: rgb(196, 136, 115);
+        text-shadow: 0px 0px 1px black;
+    }
+    to {
+        right: 0%;
+        color: black;
+    }
+  }

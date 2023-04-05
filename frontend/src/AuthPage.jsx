@@ -1,4 +1,5 @@
 import "./App.css";
+// import './App.jsx';
 import axios from "axios";
 const AuthPage = (props) => {
     const onSubmit = (e) => {
@@ -11,9 +12,10 @@ const AuthPage = (props) => {
       .then(r => props.onAuth({ ...r.data, secret: value }))
       .catch(e => console.log('error', e));
     };
-  
     return (
       <div className="background">
+        <p>Easebook</p>
+        <br></br><br></br>
         <form onSubmit={onSubmit} className="form-card">
           <div className="form-title">Welcome 👋</div>
   
@@ -28,6 +30,7 @@ const AuthPage = (props) => {
           </div>
         </form>
       </div>
+      
     );
   };
   
