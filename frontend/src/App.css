@@ -81,7 +81,23 @@ body {
   -webkit-transition: all .44s ease;
   -moz-transition: all .44s ease;
 }
-.auth-button:hover { filter: brightness(145%); }
+.auth-button:hover{
+  animation: color ease-in 2s infinite;
+}
+@keyframes color{
+  0%{
+    background-color: #501502;
+  }
+  30%{
+    background-color: #622c1a;
+  }
+  70%{
+    background-color: #5e2f1f;
+  }
+  100%{
+    background-color: #7b2002;
+  }
+}
 
 .chat-wrapper {
   height: 80vh; 
@@ -89,14 +105,6 @@ body {
   margin-left: 10%; 
   color: white; 
   background: rgb(43, 47, 60);
-}
-.light-mode {
-  background-color: rgb(16, 199, 132);
-  color: black;
-}
-.dark-mode {
-  background-color: black;
-  color: white;
 }
 .background p {
   margin-top: -120px;
